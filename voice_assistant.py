@@ -74,7 +74,7 @@ while True:
                 result = summary
             except Exception:
                 result = "Sorry, I couldn't find anything on Wikipedia."
-        elif "exit" in command or "stop" in command:
+        elif "exit" in command or "stop" in command or "no" in command:
             result = "Goodbye!"
             exit()
         else:
