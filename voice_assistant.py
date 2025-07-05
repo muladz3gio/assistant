@@ -41,6 +41,8 @@ while True:
             expression = expression.replace("plus", "+")
             expression = expression.replace("minus", "-")
             expression = expression.replace("times", "*")
+            expression = expression.replace("x", "*")
+            expression = expression.replace("X", "*")
             expression = expression.replace("multiplied by", "*")
             expression = expression.replace("divided by", "/")
 
