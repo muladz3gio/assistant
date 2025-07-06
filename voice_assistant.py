@@ -31,6 +31,11 @@ while True:
         command = text.lower()
         if "hello" in command:
             result = "hello, what can i help you with today?"
+        elif "note" in command:
+            note_text = command.split("note", 1)[1].strip()
+            with open("filename.txt", "w") as file:
+                file.write(note_text)
+            result = "Note taken."
         elif "what is" in command or "calculate" in command or "how much is" in command:
             expression = command
 
